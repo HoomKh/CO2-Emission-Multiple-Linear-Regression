@@ -1,14 +1,63 @@
-# CO2 Emission Multiple Linear Regression Model
+<div style="text-align: center;">
+    <img src="banner/banner.jpg" style="width:600px;height:350px;">
+</div>
 
 
-This model aims to predict CO2 emissions from vehicles using multiple linear regression. We have selected four key features that are influential in determining CO2 emissions: `FUELCONSUMPTION_CITY`, `ENGINESIZE`, `FUELCONSUMPTION_HWY`, and `FUELCONSUMPTION_COMB`. 
+# CO2-Emission-Multiple-Linear-Regression
 
-1. **FUELCONSUMPTION_CITY**: This feature represents the amount of fuel consumed by a vehicle while driving in city conditions, measured in liters per 100 kilometers (L/100km). Urban driving typically involves frequent stops, idling, and lower speeds, leading to higher fuel consumption and thus, potentially higher CO2 emissions.
+This project involves developing a multiple linear regression model to predict CO2 emissions based on various influencing factors. The model aims to analyze relationships between these factors and CO2 emissions, providing accurate forecasts and insights for environmental decision-making.
 
-2. **ENGINESIZE**: This feature indicates the size of the vehicle's engine, measured in liters. Engine size is directly correlated with the power and fuel consumption of a vehicle. Larger engines generally consume more fuel and produce more CO2 emissions compared to smaller engines.
+## Table of Contents
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
 
-3. **FUELCONSUMPTION_HWY**: This feature measures the fuel consumption of a vehicle on highways, where driving conditions are more consistent with higher speeds and fewer stops. Highway fuel consumption is generally lower than city consumption due to the steady speed, but it still significantly impacts overall CO2 emissions.
+## Introduction
+In this project, we aim to predict CO2 emissions using multiple linear regression. By analyzing various factors such as vehicle characteristics and fuel consumption, the model helps in understanding the contribution of each factor to CO2 emissions. This can aid policymakers and researchers in devising strategies to reduce emissions.
 
-4. **FUELCONSUMPTION_COMB**: This combined fuel consumption metric provides an overall measure of a vehicle's fuel efficiency, considering both city and highway driving conditions. It offers a comprehensive view of a vehicle’s fuel efficiency, making it a crucial predictor for CO2 emissions.
+## Dataset
+The dataset used in this project includes:
+- Vehicle characteristics (make, model, year, etc.)
+- Fuel consumption metrics
+- CO2 emissions data
 
-In the multiple linear regression model, these four features are used as independent variables to predict the dependent variable, which is the CO2 emission measured in grams per kilometer (g/km). By analyzing the relationships between these variables, the model can estimate the CO2 emissions of a vehicle with a given set of characteristics, aiding in the understanding and reduction of vehicular environmental impacts. This model is valuable for manufacturers, policymakers, and consumers aiming to reduce carbon footprints and improve fuel efficiency.
+The data is preprocessed to handle missing values, outliers, and categorical variables to make it suitable for regression analysis.
+
+## Installation
+To run this project, you need to have Python installed along with the following libraries:
+```bash
+pip install numpy pandas matplotlib scikit-learn
+```
+
+## Usage
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/HoomKh/CO2-Emission-Multiple-Linear-Regression.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd CO2-Emission-Multiple-Linear-Regression
+    ```
+3. Run the Jupyter notebook:
+    ```bash
+    jupyter notebook Multiple\ Regression\ CO2EMISSIONS\ Prediction.ipynb
+    ```
+
+## Results
+The results include:
+- Summary statistics of the dataset
+- Regression model coefficients
+- Model performance metrics (R-squared, Mean Squared Error, etc.)
+- Visualization of actual vs predicted CO2 emissions
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
